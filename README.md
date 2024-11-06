@@ -30,16 +30,15 @@ Selesai
 ````
 
 ## Penjelasan latihan 1
-Pada kode yang Anda buat, sepertinya Anda ingin menghasilkan sejumlah bilangan acak antara 1 dan 5 sebanyak `n` kali, dan mencetak hasilnya. Namun, terdapat beberapa hal yang perlu diperbaiki untuk mencapai tujuan Anda.
-
 1. Posisi "Selesai": Kata "Selesai" dicetak setelah setiap bilangan acak. Jika Anda ingin kata "Selesai" hanya dicetak setelah seluruh loop selesai, maka sebaiknya letakkan di luar loop.
 2. Indentasi dalam loop: Indentasi dan strukturnya sudah benar, jadi Anda tidak perlu khawatir tentang itu.
+Berikut adalah penjelasan lengkap mengenai kode Python yang Anda berikan:
 
-Berikut adalah versi yang lebih baik dari kode Anda:
-
+### Kode:
 ```python
 import random
-Meminta pengguna memasukkan nilai n
+
+# Meminta pengguna memasukkan nilai n
 n = int(input("Masukkan nilai N: "))
 
 # Looping untuk menghasilkan n bilangan acak
@@ -48,23 +47,53 @@ for i in range(1, n + 1):
     bilangan_acak = random.uniform(1, 5)
 
     # Menampilkan data ke-i dan nilai bilangan acak
-    print(f"data ke-{i} => {bilangan_acak:.2f}")  # Menampilkan bilangan dengan dua angka di belakang koma
-
-# Menampilkan "Selesai" setelah semua bilangan acak dicetak
-print("Selesai")
+    print(f"data ke: {i} => {bilangan_acak}")
+    print("Selesai")
 ```
 
-Penjelasan:
-1. Fungsi `random.uniform(1, 5)`: Fungsi ini menghasilkan bilangan acak float antara 1 dan 5.
-2. Format Output: Saya menambahkan format untuk membatasi output bilangan acak dengan dua angka di belakang koma (misalnya, `3.14`), agar tampilannya lebih rapi.
-3. Posisi "Selesai": "Selesai" hanya dicetak setelah seluruh loop selesai untuk menghindari mencetaknya setiap kali di dalam loop.
+### Penjelasan Langkah demi Langkah:
 
-Dengan perbaikan ini, program akan berfungsi sesuai dengan yang Anda harapkan. Semoga membantu!
+1. Import Modul `random`:
+   ```python
+   import random
+   ```
+   Di bagian ini, Anda mengimpor modul `random`, yang memungkinkan Anda untuk menghasilkan bilangan acak. Fungsi `random.uniform()` digunakan untuk menghasilkan bilangan acak float dalam rentang tertentu.
+
+2. Meminta Input dari Pengguna:
+   ```python
+   n = int(input("Masukkan nilai N: "))
+   ```
+   Kode ini meminta pengguna untuk memasukkan sebuah nilai integer yang disebut `n`. Nilai `n` ini akan menentukan berapa kali loop `for` akan dijalankan. Fungsi `input()` mengambil input dari pengguna dalam bentuk string, dan kemudian fungsi `int()` mengubahnya menjadi tipe data integer.
+
+3. Looping untuk Menghasilkan Bilangan Acak:
+   ```python
+   for i in range(1, n + 1):
+   ```
+   Di sini, loop `for` akan dimulai dari `i = 1` dan berjalan hingga `i = n`. Fungsi `range(1, n + 1)` menghasilkan urutan angka mulai dari 1 hingga `n`. Jadi, jika pengguna memasukkan `n = 5`, loop ini akan dijalankan 5 kali, dengan nilai `i` yang bervariasi dari 1 hingga 5.
+
+4. Menghasilkan Bilangan Acak:
+   ```python
+   bilangan_acak = random.uniform(1, 5)
+   ```
+   Setiap kali loop dijalankan, kode ini menghasilkan sebuah bilangan acak float di antara 1 dan 5. Fungsi `random.uniform(1, 5)` menghasilkan nilai acak dengan batas bawah 1 dan batas atas 5 (termasuk desimal). Hasilnya disimpan dalam variabel `bilangan_acak`.
+
+5. Menampilkan Hasil:
+   ```python
+   print(f"data ke: {i} => {bilangan_acak}")
+   ```
+   Di bagian ini, program menampilkan hasil bilangan acak yang telah dihasilkan. Dengan menggunakan f-string, nilai dari `i` (nomor urut data) dan `bilangan_acak` akan dicetak dalam format yang rapi, seperti "data ke: 1 => 3.12" jika nilai `i` adalah 1 dan `bilangan_acak` adalah 3.12.
+
+6. Mencetak Kata "Selesai" Setiap Kali dalam Loop:
+   ```python
+   print("Selesai")
+   ```
+   Setelah mencetak hasil untuk setiap bilangan acak, perintah ini mencetak kata "Selesai". Karena perintah ini berada di dalam loop, kata "Selesai" akan dicetak setelah setiap iterasi (setiap kali bilangan acak dicetak).
 
 ## Penjelasan Output
-
-
-
+Untuk setiap iterasi dari loop:
+1. Program mencetak bilangan acak untuk `data ke-1`, `data ke-2`, dan seterusnya.
+2. Setelah itu, kata "Selesai"dicetak. 
+- Kata "Selesai" akan dicetak setelah setiap bilangan acak. Jika Anda hanya ingin kata "Selesai" muncul sekali di akhir setelah seluruh loop selesai, Anda harus memindahkan `print("Selesai")` ke luar loop.
 
 ## LATIHAN 2
 ```python
