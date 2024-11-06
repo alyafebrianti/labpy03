@@ -118,6 +118,10 @@ laba bulan ke- 7 sebesar: 50000000.0
 laba bulan ke- 8 sebesar: 200000000.0
 Total laba adalah: 370000000.0
 ````
+## Penjelasan Latihan 2
+
+
+
 
 ## LATIHAN 3
 ```python
@@ -161,4 +165,86 @@ Pilih menu (1/2): 2
 Terima kasih telah menggunakan ATM!
 ````
 
+## Penjelasan Latihan 3
 
+1. Definisi Fungsi atm():
+def atm(): Ini adalah baris kode yang mendefinisikan sebuah fungsi bernama atm. Fungsi ini akan berisi serangkaian instruksi yang akan dijalankan ketika fungsi ini dipanggil.
+
+2. Inisialisasi Saldo:
+saldo = 10000000000
+Baris ini membuat sebuah variabel bernama saldo dan memberikan nilai awal sebesar 10.000.000.000 (sepuluh miliar rupiah). Variabel ini akan digunakan untuk melacak jumlah uang yang ada di dalam akun simulasi ATM.
+
+3. Looping Utama:
+while True:
+Ini adalah sebuah loop while yang akan terus berjalan selama kondisinya benar. Dalam hal ini, kondisinya selalu True, sehingga loop akan berjalan terus-menerus sampai ada instruksi break yang dijalankan.
+
+4. Menampilkan Menu:
+print("Saldo saat ini: Rp", saldo)
+Mencetak saldo saat ini ke layar.
+print("1. Tarik Uang")
+print("2. Keluar")
+Mencetak pilihan menu yang tersedia bagi pengguna.
+
+6. Meminta Input Pengguna:
+pilihan = int(input("Pilih menu (1/2): "))
+Meminta pengguna untuk memilih menu (1 untuk tarik uang, 2 untuk keluar). Input pengguna akan diubah menjadi tipe data integer dan disimpan dalam variabel pilihan.
+
+7. Percabangan (if-else):
+if pilihan == 1:
+Jika pengguna memilih opsi 1 (tarik uang), maka kode di dalam blok if ini akan dijalankan.
+jumlah_tarik = int(input("Masukkan jumlah penarikan: "))
+Meminta pengguna untuk memasukkan jumlah uang yang ingin ditarik.
+if jumlah_tarik <= saldo:
+Memeriksa apakah jumlah uang yang ingin ditarik kurang dari atau sama dengan saldo yang ada. Jika ya, maka penarikan berhasil.
+saldo -= jumlah_tarik
+Mengurangi saldo dengan jumlah uang yang ditarik.
+print("Penarikan berhasil!")
+Mencetak pesan bahwa penarikan berhasil.
+else:
+Jika jumlah uang yang ingin ditarik lebih besar dari saldo, maka akan menampilkan pesan bahwa saldo tidak mencukupi.
+elif pilihan == 2:
+Jika pengguna memilih opsi 2 (keluar), maka program akan mencetak pesan terima kasih dan keluar dari loop while menggunakan break.
+else:
+Jika pengguna memasukkan pilihan yang tidak valid (bukan 1 atau 2), maka akan menampilkan pesan bahwa pilihan tidak valid.
+
+8. Memanggil Fungsi:
+atm()
+Baris terakhir ini memanggil fungsi atm yang telah didefinisikan sebelumnya. Ini akan memulai eksekusi program dari awal.
+Ringkasan:
+
+Kode ini membuat sebuah program sederhana yang mensimulasikan sebuah ATM. Program ini akan terus berjalan sampai pengguna memilih untuk keluar. Program ini memungkinkan pengguna untuk memeriksa saldo dan menarik uang dari akun simulasi.
+Kode ini adalah sebuah simulasi sederhana dan tidak mencakup fitur-fitur keamanan yang ada pada ATM sebenarnya.
+Kode ini juga tidak menyimpan data saldo secara permanen. Setiap kali program dijalankan, saldo akan kembali ke nilai awalnya.
+
+## Penjelasan Output
+
+1. Inisialisasi:
+
+Saldo Awal: Program memulai dengan menetapkan saldo awal sebesar Rp10.000.000.000. Ini adalah jumlah uang yang dianggap ada di akun pada awal simulasi.
+
+2. Loop Utama:
+Program kemudian masuk ke dalam sebuah loop yang akan terus berulang sampai pengguna memilih untuk keluar. Loop ini akan terus menampilkan menu pilihan dan meminta input dari pengguna.
+
+3. Menampilkan Menu:
+Setiap kali loop berulang, program akan menampilkan menu dengan dua pilihan:
+Tarik Uang: Jika pengguna memilih opsi ini, maka program akan meminta jumlah uang yang ingin ditarik.
+Keluar: Jika pengguna memilih opsi ini, program akan mengakhiri proses dan menampilkan pesan terima kasih.
+
+4. Memilih Opsi:
+Pengguna diminta untuk memasukkan angka 1 atau 2 sesuai dengan pilihannya. Input pengguna ini akan disimpan dalam variabel pilihan.
+
+5. Menarik Uang:
+Jika pengguna memilih opsi 1 (Tarik Uang), program akan meminta pengguna untuk memasukkan jumlah uang yang ingin ditarik.
+Jumlah uang yang dimasukkan oleh pengguna kemudian akan dibandingkan dengan saldo yang ada.
+Jika jumlah yang ingin ditarik kurang dari atau sama dengan saldo, maka penarikan dianggap berhasil dan saldo akan dikurangi dengan jumlah yang ditarik.
+Jika jumlah yang ingin ditarik lebih besar dari saldo, maka program akan menampilkan pesan bahwa saldo tidak mencukupi.
+
+6. Keluar:
+Jika pengguna memilih opsi 2 (Keluar), program akan mengakhiri loop dan menampilkan pesan terima kasih.
+
+pengguna awalnya memiliki saldo Rp10.000.000.000.
+Kemudian pengguna memilih untuk menarik uang sebesar Rp10.000.000.000.
+Karena jumlah yang ditarik sama dengan saldo yang ada, maka penarikan berhasil dan saldo menjadi Rp0.
+Setelah itu, pengguna memilih untuk keluar dari program.
+
+Kode ini merupakan simulasi sederhana dari sebuah ATM. Program ini memungkinkan pengguna untuk memeriksa saldo dan menarik uang dari akun simulasi. kode ini sudah mencakup konsep dasar pemrograman seperti variabel, input/output, percabangan (if-else), dan perulangan (while).
