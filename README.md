@@ -29,6 +29,13 @@ data ke: 5 => 1.442726420829001
 Selesai
 ````
 
+## Penjelasan latihan 1
+
+
+
+
+
+
 ## LATIHAN 2
 ```python
 # Inisialisasi laba per bulan
