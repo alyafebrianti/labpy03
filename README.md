@@ -97,4 +97,19 @@ def atm():
 atm()
 ```
 
+## Output
+````markdown
+Saldo saat ini: Rp 10000000000
+1. Tarik Uang
+2. Keluar
+Pilih menu (1/2): 1
+Masukkan jumlah penarikan: 10000000000
+Penarikan berhasil!
+Saldo saat ini: Rp 0
+1. Tarik Uang
+2. Keluar
+Pilih menu (1/2): 2
+Terima kasih telah menggunakan ATM!
+````
+
 
