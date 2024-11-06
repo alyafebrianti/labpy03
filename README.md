@@ -30,8 +30,38 @@ Selesai
 ````
 
 ## Penjelasan latihan 1
+Pada kode yang Anda buat, sepertinya Anda ingin menghasilkan sejumlah bilangan acak antara 1 dan 5 sebanyak `n` kali, dan mencetak hasilnya. Namun, terdapat beberapa hal yang perlu diperbaiki untuk mencapai tujuan Anda.
 
+1. Posisi "Selesai": Kata "Selesai" dicetak setelah setiap bilangan acak. Jika Anda ingin kata "Selesai" hanya dicetak setelah seluruh loop selesai, maka sebaiknya letakkan di luar loop.
+2. Indentasi dalam loop: Indentasi dan strukturnya sudah benar, jadi Anda tidak perlu khawatir tentang itu.
 
+Berikut adalah versi yang lebih baik dari kode Anda:
+
+```python
+import random
+Meminta pengguna memasukkan nilai n
+n = int(input("Masukkan nilai N: "))
+
+# Looping untuk menghasilkan n bilangan acak
+for i in range(1, n + 1):
+    # Menghasilkan bilangan acak antara 1 dan 5
+    bilangan_acak = random.uniform(1, 5)
+
+    # Menampilkan data ke-i dan nilai bilangan acak
+    print(f"data ke-{i} => {bilangan_acak:.2f}")  # Menampilkan bilangan dengan dua angka di belakang koma
+
+# Menampilkan "Selesai" setelah semua bilangan acak dicetak
+print("Selesai")
+```
+
+Penjelasan:
+1. Fungsi `random.uniform(1, 5)`: Fungsi ini menghasilkan bilangan acak float antara 1 dan 5.
+2. Format Output: Saya menambahkan format untuk membatasi output bilangan acak dengan dua angka di belakang koma (misalnya, `3.14`), agar tampilannya lebih rapi.
+3. Posisi "Selesai": "Selesai" hanya dicetak setelah seluruh loop selesai untuk menghindari mencetaknya setiap kali di dalam loop.
+
+Dengan perbaikan ini, program akan berfungsi sesuai dengan yang Anda harapkan. Semoga membantu!
+
+## Penjelasan Output
 
 
 
