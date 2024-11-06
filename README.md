@@ -34,23 +34,6 @@ Selesai
 2. Indentasi dalam loop: Indentasi dan strukturnya sudah benar, jadi Anda tidak perlu khawatir tentang itu.
 Berikut adalah penjelasan lengkap mengenai kode Python yang Anda berikan:
 
-### Kode:
-```python
-import random
-
-# Meminta pengguna memasukkan nilai n
-n = int(input("Masukkan nilai N: "))
-
-# Looping untuk menghasilkan n bilangan acak
-for i in range(1, n + 1):
-    # Menghasilkan bilangan acak antara 1 dan 5
-    bilangan_acak = random.uniform(1, 5)
-
-    # Menampilkan data ke-i dan nilai bilangan acak
-    print(f"data ke: {i} => {bilangan_acak}")
-    print("Selesai")
-```
-
 ### Penjelasan Langkah demi Langkah:
 
 1. Import Modul `random`:
