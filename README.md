@@ -119,8 +119,20 @@ laba bulan ke- 8 sebesar: 200000000.0
 Total laba adalah: 370000000.0
 ````
 ## Penjelasan Latihan 2
+STEP 1
+Pada bagian modal_awal d9 isi 100 juta sebagai modal yang di investasikan. Total_laba diinisialisasi dengan nilai 0.
 
+STEP 2 (LOOPING)
+for bulan in range(1, 9) menjalankan loop for yang akan berjalan dari bulan 1 hingga bulan 8. bulan berfungsi sebagai variabel.
 
+STEP 3  
+if-elif digunakan untuk menentukan laba dari bulan 1-8.
+
+STEP 4
+Program akan menampilkan laba yang diperoleh pada setiap bulan. 
+
+STEP 5
+total_laba += laba menambahkan laba bulanan yang telah dihitung ke dalam total_laba
 
 
 ## LATIHAN 3
